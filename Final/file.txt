@@ -1,0 +1,21 @@
+
+This is the file that I want to use. 
+
+require_once
+include_once
+This is the file that I want to use.
+
+require_once
+include_once
+$body = file_get_contents
+
+<form></form>
+<textarea></textarea>
+
+<input name="myButton" type="submit" />
+
+$newData = nl2br(htmlspecialcharacters($_POST['nameoftextarea']));
+$handle = fopen($myFile, "w");
+fwrite = ($handle, $newData);
+fclose(handle);
+

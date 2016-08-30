@@ -1,0 +1,33 @@
+Gaming Laptop;
+Alienware;
+$699;
+https://www.amazon.com/Alienware-M17X-17-3-Black-Laptop/dp/B0054Y5X36;
+
+Screen Size: 17.3 inches
+Max Screen Resolution: 1600 x 900
+Processor: 2 GHz Core i7-2630QM
+RAM: 8 GB DDR3
+Hard Drive: 750 GB SSD
+Graphics Coprocessor: AMD Radeon HD 6870M
+Chipset Brand: AMD
+Card Description: dedicated
+Graphics Card Ram Size: 1000 MB;
+|
+High-End Gaming Laptop;
+Alienware M18x;
+$1399;
+https://www.amazon.com/Alienware-AM18XR2-7778BK-18-4-Inch-Discontinued-Manufacturer/dp/B00ANG3VY8;
+
+Screen Size: 18.4 inches
+Screen Resolution: 1920_x_1080
+Max Screen Resolution: 1920x1080
+Processor: 2.4 GHz Core i7-3630QM
+RAM: 8 GB DDR3
+Hard Drive: 750 GB mechanical_hard_drive
+Graphics Coprocessor: 2GB DDR5 NVIDIA GeForceGT 675M
+Chipset Brand: nvidia
+Card Description: dedicated
+Wireless Type: 802.11bgn
+Number of USB 2.0 Ports: 1
+Number of USB 3.0 Ports: 4
+Average Battery Life (in hours): 8 hours;
