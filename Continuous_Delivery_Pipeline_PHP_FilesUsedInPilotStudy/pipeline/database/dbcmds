@@ -1,0 +1,60 @@
+create user 'naman'@'%' identified by 'chocolate';
+grant all privileges on *.* to 'naman'@'%' with grant option;
+
+drop database if exists Tester;
+
+create database Tester;
+
+use Tester;
+
+create table gadget(
+srno int not null auto_increment primary key,
+Name varchar(30) not null,
+Type varchar(30) not null,
+Brand varchar(20) not null,
+Cost varchar(20) not null,
+Link varchar(60) not null,
+imgPath varchar(50) not null,
+icon varchar(40) not null);
+
+insert into gadget values(
+NULL,
+'Alien M17r',
+'Gaming Laptop',
+'Alienware',
+'$600',
+'www.google.com',
+'1.jpg',
+'res1.jpg');
+
+insert into gadget values(
+NULL,
+'Alien M17x',
+'High-End Gaming Laptop',
+'Alienware',
+'$1300',
+'www.amazon.com',
+'2.jpg',
+'res2.jpg');
+
+insert into gadget values(
+NULL,
+'E7',
+'Smart Phone',
+'GIONEE',
+'$500',
+'www.gionee.com',
+'3.jpg',
+'res3.jpg');
+
+insert into gadget values(
+NULL,
+'Bravia',
+'High-End Smart TV',
+'Sony',
+'$1100',
+'www.sony.com',
+'4.jpg',
+'res4.jpg');
+
+select * from gadget;
