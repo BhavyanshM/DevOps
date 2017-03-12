@@ -1,9 +1,0 @@
-
-
-String name, int dur, String alb, String loc, String sing, double cost, String icon
-
-Payphone, Maroon 5, 250, Maroon 5, Not Set, Not Set, 12.3, Not Set
-Sugar, Maroon 5, 236, Maroon 5, Not Set, Not Set, 10.0, Not Set
-New Divide, Linkin Park, 340, Jay Parker, Not Set, Not Set, 14.0, Not Set
-Whistle, Flo Rida, 230, Rida, Not Set, 12.0, Not Set
-The Best Day of My Life, American Authors, 240, Unknown, Not Set, 13.0, Not Set
