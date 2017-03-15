@@ -1,0 +1,2 @@
+@reboot sudo bash /home/ec2-user/workspace/reboot.sh &> /home/ec2-user/workspace/latest.log
+

@@ -1,0 +1,12 @@
+Starting cgconfig service: lock file already exists[WARNING]
+Starting docker:	.[  OK  ]
+rm: cannot remove ‘/home/ec2-user/temp’: No such file or directory
+An error occurred trying to connect: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json?all=1: read unix @->/var/run/docker.sock: read: connection reset by peer
+"docker stop" requires at least 1 argument(s).
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containers
+/home/ec2-user/workspace/reboot.sh: line 10: syntax error near unexpected token `)'
+/home/ec2-user/workspace/reboot.sh: line 10: `)'

@@ -1,0 +1,772 @@
+    1  ls
+    2  cd bm37/
+    3  ls
+    4  cd Docker/
+    5  ls
+    6  cd repoDevOps01/
+    7  ls
+    8  cd ..
+    9  ls
+   10  aws s3 ls s3://uwfbmbucket/
+   11  ls
+   12  sudo yup update
+   13  sudo yum update
+   14  ls
+   15  mkdir bm37
+   16  ls
+   17  cd bm37/
+   18  ls
+   19  mkdir Docker
+   20  ls
+   21  cd D
+   22  cd Docker/
+   23  ls
+   24  aws --version
+   25  git --version
+   26  sudo yum -y install git
+   27  git --version
+   28  git config --global credential.helper '!aws --profile default codecommit credential-helper $@'
+   29  git config --global credential.UseHttpPath true
+   30  git config --global user.name "bm37"
+   31  git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/20151022_w100_repoDevOps01 repoDevOps01
+   32  l
+   33  ls
+   34  nano runCF.sh 
+   35  bash runCF.sh 
+   36  aws configure
+   37  aws help
+   38  ls
+   39  bash runCF.sh 
+   40  ls
+   41  git --version
+   42  ls
+   43  cd bm37/
+   44  ls
+   45  cd ..
+   46  ls
+   47  cp cft.json ./bm37/Docker/cft.json
+   48  mv runCF.sh ./bm37/Docker/runCF.sh
+   49  ls
+   50  rm cft.json
+   51  ls
+   52  cd bm37/
+   53  ls
+   54  cd Docker
+   55  ls
+   56  chmod +x runCF.sh 
+   57  ls
+   58  exit
+   59  ls
+   60  git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/20151022_w100_repoDevOps01 repoDevOps01
+   61  ls
+   62  cd repoDevOps01/
+   63  ls
+   64  cd msc
+   65  ls
+   66  cd ..
+   67  ls
+   68  c d..
+   69  cd ..
+   70  ls
+   71  cd bm37/
+   72  ls
+   73  cd Docker/
+   74  ls
+   75  nano cft.json 
+   76  ls
+   77  cd ..
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd repoDevOps01/
+   82  ls
+   83  cd ..
+   84  ls
+   85  cd repoDevOps01/
+   86  ls
+   87  ls -alh
+   88  cd 201511_simpleCFtemplate/
+   89  ls
+   90  nano simpleCFCodeDeploy.json 
+   91  ls
+   92  l
+   93  ls
+   94  nano README.txt 
+   95  ls
+   96  cd ..
+   97  ls
+   98  cd ..
+   99  ls
+  100  cd repoDevOps01/
+  101  ls
+  102  ls -alh
+  103  ls
+  104  cd caseStudies/
+  105  ls
+  106  ls -alh
+  107  ls
+  108  cd cs1_GlassfishServer/
+  109  ls
+  110  git status
+  111  ls
+  112  cd ..
+  113  ls
+  114  cd ..
+  115  cd .
+  116  cd ..
+  117  ls
+  118  cd ..
+  119  ls
+  120  cd ..
+  121  ls
+  122  exit
+  123  ls
+  124  cd bm37/
+  125  ls
+  126  cd Docker/
+  127  ls
+  128  #aws cloudformation delete-stacks --stack-name dockerStack
+  129  l
+  130  nano cft.json 
+  131  nano runCF.sh 
+  132  aws cloudformation delete-stacks --stack-name dockerStack
+  133  aws cloudformation delete-stack --stack-name dockerStack
+  134  aws cloudformation describe-stacks
+  135  ls
+  136  aws cloudformation describe-stacks
+  137  exit
+  138  ls
+  139  cd bm37
+  140  ls
+  141  cd Docker
+  142  ls
+  143  nano cft.json
+  144  aws configure
+  145  nano cft.json
+  146  aws s3 cp s3://uwfdobucket/DT/ ./DT/ --recursive
+  147  ls
+  148  cd DT
+  149  ls
+  150  nano ls
+  151  ls
+  152  cd ..
+  153  ls
+  154  aws s3 cp ./cft.json s3://uwfdobucket/
+  155  aws s3 cp ./runCF.sh s3://uwfdobucket/
+  156  ls
+  157  cd ..
+  158  ls
+  159  cd ..
+  160  ls
+  161  ls 
+  162  cd ..
+  163  ls
+  164  cd ec2-user/
+  165  ls
+  166  cd repoDevOps01/
+  167  ls
+  168  cd caseStudies/
+  169  ls
+  170  cd cs2_SimplePythonHTTP_CodeDeploy
+  171  ls
+  172  cd filesUsed/
+  173  ls
+  174  cd iamPolicies/
+  175  ls
+  176  nano cdtutorialCloudFormation.json 
+  177  nano cdtutorialS3BucketFull.json 
+  178  cd ..
+  179  ls
+  180  cd myApp/
+  181  ls
+  182  cd ..
+  183  ls
+  184  cd ..
+  185  ls
+  186  cd ..
+  187  ls
+  188  cd .
+  189  cd ..
+  190  ls
+  191  cd bm37/
+  192  ls
+  193  cd Docker/
+  194  ls
+  195  nano cft.json 
+  196  ls
+  197  nano runCF.sh 
+  198  nano cft.json 
+  199  ls
+  200  cd ..
+  201  ls
+  202  mkdir temp
+  203  ls
+  204  cd temp
+  205  nano temp1
+  206  nano temp2
+  207  ls
+  208  aws s3 cp s3://uwfdobucket/temp/ ./ --recursive
+  209  ls
+  210  aws s3 cp ./ s3://uwfdobucket/temp/ --recursive
+  211  ls
+  212  rm temp1
+  213  ls
+  214  aws s3 sync s3://uwfdobucket/temp/ ./ 
+  215  ls
+  216  rm temp1
+  217  ls
+  218  aws s3 sync ./ s3://uwfdobucket/temp/ 
+  219  ls
+  220  aws s3 ls s3://uwfdobucket/temp/
+  221  ls
+  222  nano temp3
+  223  ls
+  224  aws s3 sync ./ s3://uwfdobucket/temp/ 
+  225  ls
+  226  cd ..
+  227  ls
+  228  cd ..
+  229  ls
+  230  cd bm37/
+  231  ls
+  232  cd Docker
+  233  ls
+  234  cd runCF.sh 
+  235  nano runCF.sh 
+  236  nano cft.json 
+  237  aws s3 ls s3://uwfdobucket/DT/
+  238  ls
+  239  cd DT
+  240  ls
+  241  nano startup.sh 
+  242  ls
+  243  cd .
+  244  cd ..
+  245  ls
+  246  nano cft.json 
+  247  ls
+  248  nano runCF.sh 
+  249  ls
+  250  cd ..
+  251  ls
+  252  cd ..
+  253  ls
+  254  cd ..
+  255  ls
+  256  cd bm37
+  257  cd ec2-user/
+  258  ls
+  259  cd bm37/
+  260  ls
+  261  cd Docker/
+  262  cd ..
+  263  ls
+  264  c d..
+  265  cd ..
+  266  ls
+  267  cd ec2-user/
+  268  ls
+  269  cd repoDevOps01/
+  270  ls
+  271  cd caseStudies/
+  272  ls
+  273  cd cs2_SimplePythonHTTP_CodeDeploy/
+  274  ls
+  275  cd filesUsed/
+  276  ls
+  277  cd ..
+  278  ls
+  279  cd ..
+  280  ls
+  281  cd cs2_SimplePythonHTTP_CodeDeploy/ls
+  282  ls
+  283  cd ..
+  284  ls
+  285  cd ..
+  286  ls
+  287  cd ..
+  288  ls
+  289  cd ec2-user/
+  290  ls
+  291  cd bm37/
+  292  ls
+  293  cd Docker 
+  294  ls
+  295  nano cft.json
+  296  ls
+  297  cd DT
+  298  ls
+  299  nano startup.sh 
+  300  ls
+  301  cd ..
+  302  ls
+  303  nano cft.json 
+  304  ls
+  305  cd DT
+  306  ls
+  307  nano startup.sh 
+  308  cd ..
+  309  ls
+  310  nano cft.json 
+  311  ls
+  312  cd bm37/
+  313  ls
+  314  cd Docker/
+  315  ls
+  316  nano cft.json 
+  317  aws s3 ls s3;//uwfdobucket/DT/
+  318  aws s3 ls s3;//uwfdobucket/
+  319  aws configure
+  320  aws s3 ls s3;//uwfdobucket/
+  321  aws s3 ls s3://uwfdobucket/
+  322  aws s3 ls s3://uwfdobucket/DT/
+  323  ls
+  324  cd bm37/
+  325  ls
+  326  cd Docker/
+  327  ls
+  328  cd ..
+  329  ls
+  330  cd Docker
+  331  ls
+  332  aws s3 sync --help
+  333  aws s3 sync -help
+  334  ls
+  335  aws help
+  336  aws s3 sync help
+  337  ls
+  338  aws s3 sync ./ s3://uwfdobucket/ 
+  339  ls
+  340  exit
+  341  ls
+  342  cd bm37
+  343  ls
+  344  cd Docker/
+  345  ls
+  346  ls -alh runCF.sh 
+  347  bash runCF.sh 
+  348  ls
+  349  nano cft.json 
+  350  ls
+  351  nano runCF.sh 
+  352  ls
+  353  cd DT
+  354  ls
+  355  cd ..
+  356  ls
+  357  nano runCF.sh 
+  358  bash runCF.sh 
+  359  ls
+  360  cd ..
+  361  ls
+  362  cd ..
+  363  ls
+  364  cd bm37/
+  365  l
+  366  pwd
+  367  cd 
+  368  ls
+  369  cd bm37/
+  370  ls
+  371  cd Docker
+  372  ls
+  373  cd DT
+  374  ls
+  375  pwd
+  376  ls
+  377  cd ..
+  378  ls
+  379  cat cft.json
+  380  ls
+  381  nano cft.json 
+  382  bash cft.json 
+  383  ls
+  384  nano cft.json 
+  385  rm cft.json 
+  386  ls
+  387  cd ..
+  388  ls
+  389  cd ..
+  390  ls
+  391  cd bm37/
+  392  ls
+  393  cd Docker/
+  394  ls
+  395  aws s3 sync s3://uwfdobucket/ ./
+  396  ls
+  397  cd DT
+  398  ls
+  399  cd ..
+  400  ls
+  401  cd ..
+  402  ls
+  403  cd Docker/
+  404  ls
+  405  nano cft.json 
+  406  bash runCF.sh 
+  407  ls
+  408  nano runCF.sh 
+  409  bash runCF.sh 
+  410  nano runCF.sh 
+  411  bash runCF.sh 
+  412  ls
+  413  exit
+  414  ls
+  415  cd bm37/
+  416  ls
+  417  cd Docker/
+  418  ls
+  419  nano rmstack.sh
+  420  ls
+  421  nano runCF.sh 
+  422  nano rmstack.sh 
+  423  aws cloudformation delete-stack help
+  424  bash rmstack.sh 
+  425  nano rmstack.sh 
+  426  bash rmstack.sh 
+  427  aws cloudformation describe-stack-events
+  428  aws cloudformation describe-stacks
+  429  ls
+  430  bash runCF.sh 
+  431  nano cft.json 
+  432  aws cloudformation describe-stacks
+  433  ls
+  434  exit
+  435  ls
+  436  bm37
+  437  ls
+  438  cd bm37/
+  439  s
+  440  ls
+  441  cd Docker/
+  442  ls
+  443  nano cft.json 
+  444  ls
+  445  bash rmstack.sh 
+  446  aws cloudformation describe-stacks
+  447  aws cloudformation describe-stacks help
+  448  ls
+  449  aws cloudformation describe-stacks 
+  450  ls
+  451  bash runCF.sh 
+  452  ls
+  453  aws cloudformation describe-stacks 
+  454  exit
+  455  ls
+  456  cd bm37/
+  457  ls
+  458  cd Docker/ls
+  459  ls
+  460  cd Docker/
+  461  ls
+  462  bash rmstack.sh 
+  463  bash runCF.sh 
+  464  exit
+  465  ls
+  466  cd bm37/
+  467  ls
+  468  cd Docker
+  469  ls
+  470  cd DT
+  471  ls
+  472  cat Dockerfile
+  473  nano Dockerfile 
+  474  nano startup.sh
+  475  cat startup.sh 
+  476  nano startup.sh 
+  477  ls
+  478  cd ..
+  479  ls
+  480  cat Dockerfile
+  481  ls
+  482  cd DT
+  483  ls
+  484  cat Dockerfile
+  485  cat startup.sh 
+  486  ls
+  487  cd ..
+  488  ls
+  489  bash rmstack.sh 
+  490  bash runCF.sh 
+  491  ls
+  492  cd DT
+  493  ls
+  494  cat startup.sh 
+  495  nano startup.sh 
+  496  ls
+  497  cd ..
+  498  ls
+  499  bash rmstack.sh 
+  500  bash runCF.sh 
+  501  exit
+  502  ls
+  503  cd bm37/Docker
+  504  ls
+  505  cd DT
+  506  ls
+  507  nano Dockerfile
+  508  nano startup.sh
+  509  nano Dockerfile
+  510  ls
+  511  cd bm37/
+  512  ls
+  513  cd Docker/
+  514  ls
+  515  cd DT
+  516  ls
+  517  nano startup.sh 
+  518  nano Dockerfile 
+  519  nano startup.sh 
+  520  cd ..
+  521  ls
+  522  bash runCF.sh 
+  523  exit
+  524  ls
+  525  cd bm37/Docker
+  526  ls
+  527  bash rmstack.sh 
+  528  ls
+  529  cd DT
+  530  ls
+  531  nano startup.sh 
+  532  cd ..;bash runCF.sh
+  533  exit
+  534  yes
+  535  ls
+  536  cd bm37/Docker
+  537  ls
+  538  bash rmstack.sh 
+  539  nano cft.json 
+  540  ls
+  541  bash runCF.sh 
+  542  bash rmstack.sh 
+  543  ls
+  544  nano cft.json 
+  545  nano runCF.sh 
+  546  bash runCF.sh 
+  547  exit
+  548  ls
+  549  cd bm37/
+  550  ls
+  551  cd Docker
+  552  ls
+  553  cd temp
+  554  ls
+  555  rm temp*
+  556  ls
+  557  cd ..
+  558  ls
+  559  rmdir temp
+  560  ls
+  561  cd DT
+  562  ls
+  563  rm index.html 
+  564  ls
+  565  cd ..
+  566  ls
+  567  aws s3 sync ./ s3://uwfdobucket/
+  568  exit
+  569  ls
+  570  cd bm37/
+  571  ls
+  572  cd Docker
+  573  ls
+  574  bash rmstack.sh 
+  575  ls
+  576  cd bm37
+  577  cd Docker/
+  578  ls
+  579  cd DT
+  580  ls
+  581  nano startup.sh 
+  582  bash rmstack.sh
+  583  cd ..
+  584  ls
+  585  bash rmstack.sh 
+  586  bash runCF.sh 
+  587  ls
+  588  bash runCF.sh 
+  589  ls
+  590  cd bm37/
+  591  ls
+  592  cd Docker
+  593  ls
+  594  cd DT
+  595  ls
+  596  cat startup.sh 
+  597  nano startup.sh 
+  598  rmstack
+  599  rmstack.sh
+  600  bash rmstack.sh
+  601  ls
+  602  cd ..
+  603  ls
+  604  rmstack
+  605  rmstack.sh
+  606  bash rmstack.sh
+  607  bash runCF.sh 
+  608  ls
+  609  bash rmstack
+  610  cd ..
+  611  ls
+  612  bash rmstack
+  613  cd Docker
+  614  ls
+  615  bash rmstack.sh 
+  616  cd DT
+  617  ls
+  618  cat startup.sh 
+  619  cat Dockerfile 
+  620  nano Dockerfile 
+  621  ls
+  622  cd bm37/
+  623  ls
+  624  cd Docker
+  625  ls
+  626  cd DT
+  627  ls
+  628  nano Dockerfile.save
+  629  nano Dockerfile
+  630  nano Dockerfile.save
+  631  rm Dockerfile.save
+  632  ls
+  633  cd ..
+  634  ls
+  635  cd ..
+  636  ls
+  637  cd temp
+  638  ls
+  639  cd ..
+  640  rm ./temp/temp*
+  641  ls
+  642  cd temp
+  643  ls
+  644  cd ..
+  645  ls
+  646  rmdir temp
+  647  ls
+  648  exit
+  649  ls
+  650  git -version
+  651  git --version
+  652  ls
+  653  git status
+  654  ls
+  655  cd repoDevOps01/
+  656  l
+  657  sls
+  658  ls
+  659  git status
+  660  git fetch origin master
+  661  git status
+  662  ls
+  663  git merge
+  664  ls
+  665  git status
+  666  cd ..
+  667  ls
+  668  cd bm37/
+  669  ls
+  670  cd Docker/
+  671  ls
+  672  cd DT
+  673  ls
+  674  cd index
+  675  ls
+  676  cd ..
+  677  cd ..[
+  678  cd ..
+  679  ls
+  680  cd ..
+  681  ls
+  682  cd ..
+  683  ls
+  684  cd repoDevOps01/
+  685  ls
+  686  cd caseStudies/
+  687  ls
+  688  cp -r cs4_SimplePythonHTTP_Chef/ cs3_SimplePythonHTTP_Docker/ 
+  689  ls
+  690  cd cs3_SimplePythonHTTP_Docker/
+  691  ls
+  692  nano README.txt 
+  693  rm *.jpg
+  694  ls
+  695  rm reportFigsChef.pptx 
+  696  ls
+  697  cd filesUsed/
+  698  ls
+  699  rm *.rb
+  700  rm *.sh
+  701  ls
+  702  cd ..
+  703  ls
+  704  cd ..
+  705  ls
+  706  pwd
+  707  ls
+  708  cd cs3_SimplePythonHTTP_Docker/
+  709  ls
+  710  cp -r /home/ec2-user/bm37/Docker/ ./filesUsed/
+  711  ls
+  712  cd filesUsed/
+  713  ls
+  714  cd Docker
+  715  ls
+  716  cd DT
+  717  ls
+  718  cd index
+  719  ls
+  720  cd ..
+  721  ls
+  722  cd ..
+  723  ls
+  724  cd ..
+  725  ls
+  726  cp -r Docker/* .
+  727  ls
+  728  rm Docker/*
+  729  cd Docker
+  730  ls
+  731  cd DT
+  732  ls
+  733  rm *
+  734  ls
+  735  cd index
+  736  ls
+  737  cd ..
+  738  ls
+  739  cd ..
+  740  ls
+  741  cd ..
+  742  ls
+  743  pwd
+  744  ls
+  745  rm -r Docker
+  746  ls
+  747  cd ..
+  748  ls
+  749  cd ..
+  750  ls
+  751  git status
+  752  ls
+  753  git add cs3_SimplePythonHTTP_Docker/
+  754  git status
+  755  git commit -m "cs3 files"
+  756  git status
+  757  git push origin master
+  758  ls
+  759  cd ..
+  760  ls
+  761  history
+  762  cd ..
+  763  ls
+  764  cd bm37/
+  765  ls
+  766  nano historyGIT
+  767  cat history 
+  768  history
+  769  history | historyGIT
+  770  history
+  771  cat history
+  772  history >> historyGIT
