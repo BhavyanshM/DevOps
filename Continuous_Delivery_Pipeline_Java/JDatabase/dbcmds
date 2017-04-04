@@ -25,18 +25,28 @@ NULL,
 'Maroon 5',
 'Adam Levine',
 10.99,
-'C:\\Entertainment\\Songs\\Dont_Wanna_Know.mp3',
+'/resources/Dont_Wanna_Know.mp3',
 'Dont_Wanna_Know.jpg',
 12);
 
 insert into songs values(
 NULL,
 'Sugar',
-2800,
+280,
 'Maroon 5',
 'Adam Levine',
 8.99,
-'C:\\Entertainment\\Songs\\Sugar.mp3',
+'/resources/Sugar.mp3',
 'Sugar.jpg',
 4);
 
+insert into songs values(
+NULL,
+'Honey, I\'m Good',
+200,
+'Magazies or Novels',
+'Andy Grammer',
+10.99,
+'/resources/Honey.mp3',
+'Honey.jpg',
+3);
